@@ -1,0 +1,5 @@
+CsvMapper/obj/
+CsvMapper/bin/
+*.suo
+UnitTests/obj/
+UnitTests/bin/
