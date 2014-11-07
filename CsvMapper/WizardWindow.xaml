@@ -1,0 +1,59 @@
+﻿<!--
+    CSV Mapper - A tool for mapping the fields in one CSV file to different fields in another CSV file
+    Copyright (C) 2014 Christopher Wyatt
+    
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License
+    as published by the Free Software Foundation; either version 2
+    of the License, or (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+-->
+<Window x:Class="CsvMapper.WizardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Csv Mapper" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <DockPanel>
+            <Image
+                DockPanel.Dock="Left"
+                Source="assets/wizzard-side.png" />
+            <Frame
+                DockPanel.Dock="Right"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Stretch"
+                Height="Auto"
+                Source="TestPage.xaml" />
+        </DockPanel>
+        <Border
+            BorderThickness="0, 1, 0, 0"
+            BorderBrush="#dddddd"
+            Grid.Row="1">
+            <Grid>
+                <StackPanel
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+                    <Button
+                        VerticalAlignment="Center"
+                        Margin="0, 0, 10, 0"
+                        Padding="12, 2"
+                        Content="Cancel"/>
+                    <Button
+                        VerticalAlignment="Center"
+                        Margin="0, 0, 10, 0"
+                        Padding="12, 2"
+                        Content="Next"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

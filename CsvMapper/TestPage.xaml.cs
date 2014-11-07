@@ -1,4 +1,4 @@
-﻿<!--
+﻿﻿/*
     CSV Mapper - A tool for mapping the fields in one CSV file to different fields in another CSV file
     Copyright (C) 2014 Christopher Wyatt
     
@@ -13,12 +13,18 @@
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
--->
-<Window x:Class="CsvMapper.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
-</Window>
+*/
+
+namespace CsvMapper
+{
+    /// <summary>
+    /// Interaction logic for TestPage.xaml
+    /// </summary>
+    public partial class TestPage
+    {
+        public TestPage()
+        {
+            InitializeComponent();
+        }
+    }
+}
